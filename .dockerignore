@@ -1,0 +1,7 @@
+.idea
+.gradle
+.vscode
+build
+Dockerfile
+compose.yaml
+HELP.md

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dev.usmaarn.locstique.LocstiqueApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-05-07T16:31:00.036Z" hostname="PALMPAYs-MacBook-Air.local" time="0.306">
+  <properties/>
+  <testcase name="contextLoads()" classname="dev.usmaarn.locstique.LocstiqueApplicationTests" time="0.306"/>
+  <system-out><![CDATA[17:30:57.957 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [dev.usmaarn.locstique.LocstiqueApplicationTests]: LocstiqueApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+17:30:57.998 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration dev.usmaarn.locstique.LocstiqueApplication for test class dev.usmaarn.locstique.LocstiqueApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.5)
+
+2025-05-07T17:30:58.173+01:00  INFO 47520 --- [locstique] [    Test worker] d.u.locstique.LocstiqueApplicationTests  : Starting LocstiqueApplicationTests using Java 17.0.15 with PID 47520 (started by palmpay in /Users/palmpay/Sites/locstique/backend)
+2025-05-07T17:30:58.173+01:00  INFO 47520 --- [locstique] [    Test worker] d.u.locstique.LocstiqueApplicationTests  : No active profile set, falling back to 1 default profile: "default"
+2025-05-07T17:30:58.440+01:00  INFO 47520 --- [locstique] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07T17:30:58.459+01:00  INFO 47520 --- [locstique] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interface.
+2025-05-07T17:30:58.669+01:00  INFO 47520 --- [locstique] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-05-07T17:30:58.820+01:00  INFO 47520 --- [locstique] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@bb8ead8
+2025-05-07T17:30:58.821+01:00  INFO 47520 --- [locstique] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-05-07T17:30:58.840+01:00  INFO 47520 --- [locstique] [    Test worker] org.flywaydb.core.FlywayExecutor         : Database: jdbc:postgresql://localhost:5433/locstique (PostgreSQL 16.2)
+2025-05-07T17:30:58.871+01:00  INFO 47520 --- [locstique] [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "public"."flyway_schema_history" does not exist yet
+2025-05-07T17:30:58.873+01:00  INFO 47520 --- [locstique] [    Test worker] o.f.core.internal.command.DbValidate     : Successfully validated 1 migration (execution time 00:00.008s)
+2025-05-07T17:30:58.889+01:00  INFO 47520 --- [locstique] [    Test worker] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "public"."flyway_schema_history" ...
+2025-05-07T17:30:58.949+01:00  INFO 47520 --- [locstique] [    Test worker] o.f.core.internal.command.DbMigrate      : Current version of schema "public": << Empty Schema >>
+2025-05-07T17:30:58.953+01:00  INFO 47520 --- [locstique] [    Test worker] o.f.core.internal.command.DbMigrate      : Migrating schema "public" to version "1 - create product table"
+2025-05-07T17:30:58.982+01:00  INFO 47520 --- [locstique] [    Test worker] o.f.core.internal.command.DbMigrate      : Successfully applied 1 migration to schema "public", now at version v1 (execution time 00:00.013s)
+2025-05-07T17:30:59.027+01:00  INFO 47520 --- [locstique] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07T17:30:59.048+01:00  INFO 47520 --- [locstique] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-07T17:30:59.061+01:00  INFO 47520 --- [locstique] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-05-07T17:30:59.168+01:00  INFO 47520 --- [locstique] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07T17:30:59.206+01:00  INFO 47520 --- [locstique] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07T17:30:59.527+01:00  INFO 47520 --- [locstique] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07T17:30:59.528+01:00  INFO 47520 --- [locstique] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07T17:30:59.626+01:00  WARN 47520 --- [locstique] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-05-07T17:30:59.634+01:00  WARN 47520 --- [locstique] [    Test worker] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2025-05-07T17:30:59.720+01:00  WARN 47520 --- [locstique] [    Test worker] o.s.security.core.userdetails.User       : User.withDefaultPasswordEncoder() is considered unsafe for production and is only intended for sample applications.
+2025-05-07T17:30:59.794+01:00  INFO 47520 --- [locstique] [    Test worker] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-05-07T17:31:00.031+01:00  INFO 47520 --- [locstique] [    Test worker] d.u.locstique.LocstiqueApplicationTests  : Started LocstiqueApplicationTests in 1.974 seconds (process running for 2.383)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
