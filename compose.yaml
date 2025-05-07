@@ -1,0 +1,36 @@
+services:
+  db:
+    image: postgres:16.2-alpine
+    container_name: locstique_db
+    environment:
+      POSTGRES_DB: locstique
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: locstique_adminer
+    ports:
+      - "5433:5432"
+    restart: always
+    volumes:
+      - db_data:/var/lib/postgresql/data
+    networks:
+      - locstique_network
+
+  # Optionally, add your Spring Boot app here if you want to dockerize it
+  # app:
+  #   build: .
+  #   ports:
+  #     - "8080:8080"
+  #   depends_on:
+  #     - postgres
+  #   environment:
+  #     SPRING_DATASOURCE_URL: jdbc:postgresql://postgres:5432/mydatabase
+  #     SPRING_DATASOURCE_USERNAME: myuser
+  #     SPRING_DATASOURCE_PASSWORD: mypassword
+  #   networks:
+  #     - springnet
+
+volumes:
+  db_data:
+
+networks:
+  locstique_network:
+    external: true
